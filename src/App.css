@@ -1,0 +1,49 @@
+:root {
+  --black: #333333;
+  --grey: #cccccc;
+  --light-grey: #f2f2f2;
+}
+
+*:not(a) {
+  box-sizing: border-box;
+  color: var(--black);
+}
+
+header {
+  margin-left: 5vw;
+}
+
+.record-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.label-card {
+  flex: 1 0 300px;
+  margin: 4px;
+  border: 2px solid var(--grey);
+  border-radius: 5px;
+}
+
+.label-card h2 {
+  padding: 4px 8px;
+  margin: 0;
+  background-color: var(--light-grey)
+}
+
+.label-card h3 {
+  margin: 8px 0;
+}
+
+.label-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.label-card__band {
+  /* background: green; */
+  border-top: 2px solid var(--grey);
+  padding: 0 8px 8px;
+}
+
+
