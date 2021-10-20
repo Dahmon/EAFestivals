@@ -1,17 +1,14 @@
-
 import './App.css';
 import RecordList from './components/RecordList';
 
 function App() {
   return (
-    <>
-      <header>
+    <main>
+      <div className={'container'}>
         <h1>Music Festivals</h1>
-      </header>
-      <main>
         <RecordList />
-      </main>
-    </>
+      </div>
+    </main>
   );
 }
 

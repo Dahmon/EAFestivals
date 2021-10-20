@@ -13,8 +13,6 @@ const RecordList = () => {
     setRefresh(!refresh);
   }
 
-  
-
   useEffect(() => {
     fetchData(url).then(response => {
       if (response.status === 'success') {

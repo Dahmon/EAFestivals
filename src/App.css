@@ -13,13 +13,18 @@ header {
   margin-left: 5vw;
 }
 
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
 .record-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .label-card {
-  flex: 1 0 300px;
+  flex: 1 0 calc(25% - 8px);
   margin: 4px;
   border: 2px solid var(--grey);
   border-radius: 5px;
@@ -41,9 +46,12 @@ header {
 }
 
 .label-card__band {
-  /* background: green; */
   border-top: 2px solid var(--grey);
   padding: 0 8px 8px;
 }
 
-
+@media (max-width: 600px) {
+  .label-card {
+    flex-basis: 100%;
+  }
+}
